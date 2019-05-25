@@ -1,7 +1,9 @@
 import React, { PureComponent, Fragment } from 'react';
 import {
-    LineChart, LabelList, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
+    LabelList, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
 } from 'recharts';
+
+import {BLineChart} from '../components/LineChart'
 
 import data from '../fixture';
 
@@ -26,7 +28,7 @@ export default class Example extends PureComponent {
 
             </p>
 
-            <LineChart
+            <BLineChart
                 width={1024}
                 height={500}
                 data={data}
@@ -57,7 +59,7 @@ export default class Example extends PureComponent {
                 <Line type="monotone" dataKey="btc" stroke="#82ca9d" activeDot={{ r: 4 }}>
                     <LabelList dataKey="btc" position="insideTop" angle="45"  />
                 </Line> */}
-            </LineChart>
+            </BLineChart>
         </Fragment>
       );
     }
