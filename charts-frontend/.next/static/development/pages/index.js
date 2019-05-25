@@ -52637,8 +52637,8 @@ function (_PureComponent) {
         },
         __self: this
       }, "4_ Comprar 100K en bitcoins y mantenerlos"))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(recharts__WEBPACK_IMPORTED_MODULE_6__["LineChart"], {
-        width: 500,
-        height: 300,
+        width: 1024,
+        height: 500,
         data: _fixture__WEBPACK_IMPORTED_MODULE_7__["default"],
         margin: {
           top: 5,
@@ -52688,17 +52688,8 @@ function (_PureComponent) {
         dataKey: "ars",
         stroke: "#8884d8",
         activeDot: {
-          r: 8
+          r: 4
         },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 42
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(recharts__WEBPACK_IMPORTED_MODULE_6__["Line"], {
-        type: "monotone",
-        dataKey: "pfijo",
-        stroke: "#fc1a4a",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 43
@@ -52706,10 +52697,10 @@ function (_PureComponent) {
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(recharts__WEBPACK_IMPORTED_MODULE_6__["Line"], {
         type: "monotone",
-        dataKey: "usd",
-        stroke: "#f7b733",
+        dataKey: "pfijo",
+        stroke: "#fc1a4a",
         activeDot: {
-          r: 8
+          r: 4
         },
         __source: {
           fileName: _jsxFileName,
@@ -52718,11 +52709,26 @@ function (_PureComponent) {
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(recharts__WEBPACK_IMPORTED_MODULE_6__["Line"], {
         type: "monotone",
-        dataKey: "btc",
-        stroke: "#82ca9d",
+        dataKey: "usd",
+        stroke: "#f7b733",
+        activeDot: {
+          r: 4
+        },
         __source: {
           fileName: _jsxFileName,
           lineNumber: 45
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(recharts__WEBPACK_IMPORTED_MODULE_6__["Line"], {
+        type: "monotone",
+        dataKey: "btc",
+        stroke: "#82ca9d",
+        activeDot: {
+          r: 4
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 46
         },
         __self: this
       })));

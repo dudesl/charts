@@ -1,6 +1,6 @@
 import React, { PureComponent, Fragment } from 'react';
 import {
-    LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
+    LineChart, LabelList, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
 } from 'recharts';
 
 import data from '../fixture';
@@ -27,8 +27,8 @@ export default class Example extends PureComponent {
             </p>
 
             <LineChart
-                width={500}
-                height={300}
+                width={1024}
+                height={500}
                 data={data}
                 margin={{
                     top: 5, right: 30, left: 20, bottom: 5,
@@ -39,10 +39,24 @@ export default class Example extends PureComponent {
                 <YAxis />
                 <Tooltip />
                 <Legend />
-                <Line type="monotone" dataKey="ars" stroke="#8884d8" activeDot={{ r: 8 }} />
-                <Line type="monotone" dataKey="pfijo" stroke="#fc1a4a" />
-                <Line type="monotone" dataKey="usd" stroke="#f7b733" activeDot={{ r: 8 }} />
-                <Line type="monotone" dataKey="btc" stroke="#82ca9d" />
+
+                <Line type="monotone" dataKey="ars" stroke="#8884d8" activeDot={{ r: 4 }} />
+                <Line type="monotone" dataKey="pfijo" stroke="#fc1a4a" activeDot={{ r: 4 }} />
+                <Line type="monotone" dataKey="usd" stroke="#f7b733" activeDot={{ r: 4 }} />
+                <Line type="monotone" dataKey="btc" stroke="#82ca9d" activeDot={{ r: 4 }} />
+
+                {/* <Line type="monotone" dataKey="ars" stroke="#8884d8" activeDot={{ r: 4 }}>
+                    <LabelList dataKey="ars" position="insideTop" angle="45"  />
+                </Line>
+                <Line type="monotone" dataKey="pfijo" stroke="#fc1a4a" activeDot={{ r: 4 }}>
+                    <LabelList dataKey="pfijo" position="insideTop" angle="45"  />
+                </Line>
+                <Line type="monotone" dataKey="usd" stroke="#f7b733" activeDot={{ r: 4 }}>
+                    <LabelList dataKey="usd" position="insideTop" angle="45"  />
+                </Line>
+                <Line type="monotone" dataKey="btc" stroke="#82ca9d" activeDot={{ r: 4 }}>
+                    <LabelList dataKey="btc" position="insideTop" angle="45"  />
+                </Line> */}
             </LineChart>
         </Fragment>
       );
